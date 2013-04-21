@@ -32,20 +32,23 @@ Set the right size for the Large size image on the Settings > Media page BEFORE 
 == Frequently Asked Questions ==
 
 = There's no inner zoom effect on my images =
+
 Check the dimensions of the original image and the dimensions set in Settings > Media > Large size. 
 Your original image should be larger than the dimensions set for the large image in the Media settingspage.
 
 = How about captions? =
+
 If you have a text in the captions area of your image in the Media Library, it is shown on the picture. The text disappears on mouseover. If you don't want the captions to be shown but don't want to delete them, use a display: none; in your stylesheet. 
 You can change the style of the captions by overriding the css in your own stylesheet.
 
 = How do I use the medium sized image instead of the large image in the gallery view? =
+
 That is not possible yet but let me know if that is a feature you would like me to add.
 
 == Screenshots ==
 
 1. Upload the pictures in which you want the zoom effect when you are editing your page or post. That way they get attached to it. Add the shortcode [sabineszoom] to the text.
-2. View the images already uploaded to the current page or post by selecting 'Uploaded to this page' option from the pulldown menu. Don't insert the images into the textfield.
+2. View the images already uploaded to the current page or post by selecting *'Uploaded to this page'* option from the pulldown menu. Don't insert the images into the textfield.
 
 == Changelog ==
 
