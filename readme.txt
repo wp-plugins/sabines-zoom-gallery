@@ -1,6 +1,6 @@
 === Sabines Zoom Gallery ===
-Contributors: Sabine Visser
-Tags: image, photo, gallery, inner zoom, css3, html5, captions, multiple galleries on one page, javascript, jquery
+Contributors: sabinevi
+Tags: image, photo, gallery, inner zoom, captions, javascript, jquery
 Requires at least: 3.5.0
 Tested up to: 3.5.1
 Stable tag: 0.1
@@ -10,6 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Creates a gallery of all the attached images to a page or post, with an inner zoom to the full image.
 
 == Description ==
+
 Have a nice inner zoom on your gallery images. It shows only the large images, no thumbs, and shows an inner zoom onmouseover.
 
 This is my first plugin, originally build for a customer who couldn't find a gallery plugin that fitted his needs exactly:
@@ -30,6 +31,10 @@ Set the right size for the Large size image on the Settings > Media page BEFORE 
 
 == Frequently Asked Questions ==
 
+= There's no inner zoom effect on my images =
+Check the dimensions of the original image and the dimensions set in Settings > Media > Large size. 
+Your original image should be larger than the dimensions set for the large image in the Media settingspage.
+
 = How about captions? =
 If you have a text in the captions area of your image in the Media Library, it is shown on the picture. The text disappears on mouseover. If you don't want the captions to be shown but don't want to delete them, use a display: none; in your stylesheet. 
 You can change the style of the captions by overriding the css in your own stylesheet.
@@ -38,6 +43,7 @@ You can change the style of the captions by overriding the css in your own style
 That is not possible yet but let me know if that is a feature you would like me to add.
 
 == Screenshots ==
+
 1. Upload the pictures in which you want the zoom effect when you are editing your page or post. That way they get attached to it. Add the shortcode [sabineszoom] to the text.
 2. View the images already uploaded to the current page or post by selecting 'Uploaded to this page' option from the pulldown menu. Don't insert the images into the textfield.
 
