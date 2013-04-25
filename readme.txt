@@ -64,4 +64,4 @@ Use `[sabineszoom showsize=medium]` if you want the **medium** size or `[sabines
 
 == Upgrade Notice ==
 
-N.a.
+N.a.  
