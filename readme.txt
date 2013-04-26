@@ -12,6 +12,8 @@ Creates a gallery of all the attached images to a page or post, with an inner zo
 
 == Description ==
 
+WHY IS THIS NEW TEXT NOT SHOWING UP ON wordpress.org???
+
 Have a nice inner zoom on your gallery images. It shows only the images, no clickable thumbs, and shows an inner zoom onmouseover.
 
 This is my first plugin, originally build for a customer who couldn't find a gallery plugin that fitted his needs exactly:
