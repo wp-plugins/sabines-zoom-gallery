@@ -4,15 +4,13 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image, photo, gallery, inner zoom, captions, javascript, jquery
 Requires at least: 3.5.0
 Tested up to: 3.5.1
-Stable tag: 0.2
+Stable tag: 0.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Creates a gallery of all the attached images to a page or post, with an inner zoom to the full image.
 
 == Description ==
-
-WHY IS THIS NEW TEXT NOT SHOWING UP ON wordpress.org???
 
 Have a nice inner zoom on your gallery images. It shows only the images, no clickable thumbs, and shows an inner zoom onmouseover.
 
@@ -56,6 +54,9 @@ Use `[sabineszoom showsize=medium]` if you want the **medium** size or `[sabines
 2. View the images already uploaded to the current page or post by selecting **Uploaded to this page** option from the pulldown menu. **Don't insert the images into the textfield.**
 
 == Changelog ==
+
+= 0.2.1 =
+* Renamed functions by adding a prefix to prevent confusion
 
 = 0.2 =
 * Added 'showsize' attribute to shortcode

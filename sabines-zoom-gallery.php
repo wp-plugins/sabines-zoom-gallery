@@ -3,7 +3,7 @@
 Plugin Name: Sabines Zoom Gallery
 Plugin URI: http://www.sabine.nl/innerzooom-test/
 Description: Gallery plugin to make the large pic to zoom into the full version, no thumbnails
-Version: 0.2
+Version: 0.2.1
 Author: Sabine Visser
 Author URI: http://www.sabine.nl
 License: GPL2
@@ -92,18 +92,22 @@ class SabinesZoomGallery {
         }
         return $gallery;
     }
+    
+    
+    /**
+     * new way to add javascripts and stylesheets to the queue
+     */
+    function sv_add_styles_and_scripts() {
 
-	function sv_add_styles_and_scripts() {
+        wp_enqueue_style('sabineszoomgallerystylesheet', WP_PLUGIN_URL . '/sabines-zoom-gallery/css/sabines-style.css',false); 
 
-            wp_enqueue_style('sabineszoomgallerystylesheet', WP_PLUGIN_URL . '/sabines-zoom-gallery/css/sabines-style.css',false); 
+        wp_enqueue_script('jquery');
 
-            wp_enqueue_script('jquery');
-
-            wp_enqueue_script('sabineszoomgalleryscript', WP_PLUGIN_URL . '/sabines-zoom-gallery/js/jquery.elevateZoom-2.5.5.min.js', false);
-	}
+        wp_enqueue_script('sabineszoomgalleryscript', WP_PLUGIN_URL . '/sabines-zoom-gallery/js/jquery.elevateZoom-2.5.5.min.js', false);
+    }
 
 	   
-	/**
+    /**
     * add initscript to head section
     **/
     function sv_add_js_zoom_init() {
@@ -114,3 +118,4 @@ class SabinesZoomGallery {
             </script>';
     }
 }
+
