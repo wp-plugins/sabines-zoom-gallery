@@ -12,17 +12,17 @@ Creates a gallery of all the attached images to a page or post, with an inner zo
 
 == Description ==
 
-Have a nice inner zoom on your gallery images. It shows only the images, no clickable thumbs, and shows an inner zoom onmouseover.
-
-This is my first plugin, originally build for a customer who couldn't find a gallery plugin that fitted his needs exactly:
-no gallery of thumbnails that should be clicked on, this is just a list of the large images that have an inner zoom to the full image.
-
-I used the jQuery plugin Image Zoom by elevate zoom for the inner zoom effect (see http://www.elevateweb.co.uk/image-zoom/examples#inner-zoom) .
+Have a nice inner zoom on your gallery images. It shows only the images, no clickable thumbs, and shows an inner zoom onmouseover. The zoom effect depends heavily on the resolution of the image you have uploaded; a bigger original gives a better zoom effect.
 
 In this second release there is one configuration option: you can add the parameter 'showsize' and the desired size (thumbnail, medium or large) to the shortcode.
 
 If you want to use this gallery, simply use the [sabineszoom] shortcode in your post or page, or add `<?php echo do_shortcode('[sabineszoom]'); ?>` within the loop, to your template.
 By default the 'large' image is used, if you want the 'medium' or 'thumbnail' to show, add the parameter 'showsize' like so: `[sabineszoom showsize=medium]`. Valid options are **thumbnail**, **medium** and **large**.
+
+This is my first plugin, originally build for a customer who couldn't find a gallery plugin that fitted his needs exactly:
+no gallery of thumbnails that should be clicked on, this is just a list of the images attached to a post or page that have an inner zoom to the full image.
+
+I used the jQuery plugin Image Zoom by elevate zoom for the inner zoom effect (see http://www.elevateweb.co.uk/image-zoom/examples#inner-zoom) .
 
 Please let me know if you need help or have a feature request.
 
@@ -31,14 +31,14 @@ Please let me know if you need help or have a feature request.
 1. Unzip and activate
 2. Set the desired size for your images on the Settings > Media page **BEFORE** uploading your images to your post or page
 3. Open the editor of the post or page where you want the gallery to appear
-4. Upload your picture(s) by clicking the **Add media**-button just above the buttonbar. **DON'T USE** the **Insert into post** button, the images are automatically connected to the post
+4. Upload your picture(s) by clicking the **Add media**-button just above the buttonbar. **DON'T USE** the **Insert into post** button, the images are automatically connected to the post. The zoom effect depends heavily on the resolution of the image you upload; a bigger original gives a better zoom effect.
 5. Add the shortcode `[sabineszoom]` to your post or page
 6. By default the large image is used, use `[sabineszoom showsize=medium]` if you want the **medium** size or `[sabineszoom showsize=thumbnail]` for the **thumbnail** 
 7. Publish the post or page.
 
 == Frequently Asked Questions ==
 
-= There's no inner zoom effect on my images =
+= There's no or minor inner zoom effect on my images =
 Check the dimensions of the original image and the dimensions set in Settings > Media. Your original image should be larger than the dimensions set for the large (or your preferred size) image in the Media settingspage.
 
 = How about captions? =
@@ -52,6 +52,8 @@ Use `[sabineszoom showsize=medium]` if you want the **medium** size or `[sabines
 
 1. Upload the pictures in which you want the zoom effect when you are editing your page or post. That way they get attached to the post or page. Add the shortcode [sabineszoom] to the text.
 2. View the images already uploaded to the current page or post by selecting **Uploaded to this page** option from the pulldown menu. **Don't insert the images into the textfield.**
+3. By default the large image is shown
+4. The caption disappears onmousever
 
 == Changelog ==
 
