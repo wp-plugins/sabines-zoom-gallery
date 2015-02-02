@@ -3,8 +3,8 @@ Contributors: sabinevi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SGZZFEAK5YSEE
 Tags: image, photo, gallery, inner zoom, captions, javascript, jquery
 Requires at least: 3.5.0
-Tested up to: 3.5.1
-Stable Tag: 0.2.1
+Tested up to: 4.1
+Stable Tag: 0.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,10 @@ Creates a gallery of all the attached images to a page or post, with an inner zo
 
 Have a nice inner zoom on your gallery images. It shows only the images, no clickable thumbs, and shows an inner zoom onmouseover. The zoom effect depends heavily on the resolution of the image you have uploaded; a bigger original gives a better zoom effect.
 
-In this second release there is one configuration option: you can add the parameter 'showsize' and the desired size (thumbnail, medium or large) to the shortcode.
+There are two configuration options to add to the shortcode: 
+1. the parameter 'showsize' and the desired size (thumbnail, medium or large): `[sabineszoom showsize=medium]`
+2. the parameter 'thickbox' with the value 1: `[sabineszoom thickbox=1]`
+or both: `[sabineszoom showsize=medium thickbox=1]`
 
 If you want to use this gallery, simply use the [sabineszoom] shortcode in your post or page, or add `<?php echo do_shortcode('[sabineszoom]'); ?>` within the loop, to your template.
 By default the 'large' image is used, if you want the 'medium' or 'thumbnail' to show, add the parameter 'showsize' like so: `[sabineszoom showsize=medium]`. Valid options are **thumbnail**, **medium** and **large**.
@@ -32,7 +35,7 @@ Please let me know if you need help or have a feature request.
 2. Set the desired size for your images on the Settings > Media page **BEFORE** uploading your images to your post or page
 3. Open the editor of the post or page where you want the gallery to appear
 4. Upload your picture(s) by clicking the **Add media**-button just above the buttonbar. **DON'T USE** the **Insert into post** button, the images are automatically connected to the post. The zoom effect depends heavily on the resolution of the image you upload; a bigger original gives a better zoom effect.
-5. Add the shortcode `[sabineszoom]` to your post or page
+5. Add the shortcode `[sabineszoom]` to your post or page content
 6. By default the large image is used, use `[sabineszoom showsize=medium]` if you want the **medium** size or `[sabineszoom showsize=thumbnail]` for the **thumbnail** 
 7. Publish the post or page.
 
@@ -56,6 +59,12 @@ Use `[sabineszoom showsize=medium]` if you want the **medium** size or `[sabines
 4. The caption disappears onmousever
 
 == Changelog ==
+
+= 0.3.1 =
+* WP version update February 2015
+
+= 0.3 =
+* Added Thickbox option
 
 = 0.2.1 =
 * Renamed functions by adding a prefix to prevent confusion
